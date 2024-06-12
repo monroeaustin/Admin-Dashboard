@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: grid;
+   height: 100vh;
+   grid-template-rows: 1fr 0.5fr 4fr 1fr;
+    grid-template-columns: 250px 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "sidebar header header header header"
+    "sidebar content content content content"
+    "sidebar content content content content"
+    "sidebar content content content content";
+
+}
+.side-bar{
+    grid-area: sidebar;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header{
+    grid-area: header;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+.main-content{
+    grid-area: content;
+    background-color: purple;
+    display: grid;
+    grid-template-rows: 0.3fr 2fr 0.15fr;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "heading heading";
+
+
+}
+.heading{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: minmax(100px, 0.20fr);
+    background-color: aliceblue;
+    grid-area: heading;
+}
+img{
+    height: 30px;
+}
+.card-container{
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+grid-template-columns: 1fr;
+}
+.card{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+}
+.side-content{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    
+}
+.announcement,.trending{
+    flex: 1;
+}
