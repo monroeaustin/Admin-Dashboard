@@ -1,27 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
-        <div class="side-bar">Sidebar
-            <div class="items1">Dash</div>
-            <div class="items2">Settings <span><img src="./img/car-cog.svg" alt=""></span></div>
-            <div class="items1">Logins</div>
+        <div class="side-bar"><div class="branding-name"><span id="brand"><img src="./img/car-cog.svg" alt="Car Logo"><h1>FleetHub</h1></span></div><div class="sidebar-elements">
+            <div class="items1"><span id="home"><img src="./img/home-analytics.svg" alt="Home"><h3>Home</h3></span><br><span><img src="./img/account-box-outline.svg" alt=""><h3>Profile</h3></span><br>
+            <span><img src="./img/message.svg" alt=""> <h3>Messages</h3></span><br><span><img src="./img/wrench-clock.svg" alt=""><h3>Maintenance</h3></span><br><span><img src="./img/history.svg" alt=""><h3>Reservations</h3></span>
+        <br><span><img src="./img/account-group.svg" alt=""><h3>CRM</h3></span></div>
+            <div class="items2"><span><img src="./img/cog.svg" alt=""> <h3>Settings</h3></span>
+            <br><span><img src="./img/help.svg" alt=""><h3>Support</h3></span><br><span><img src="./img/theme-light-dark.svg" alt=""><h3>Dark Mode</h3></span></div></div>
+            <div class="inspired"><p class="inspiration-txt">FLEET MANAGE</p><p class="credits">Inspired Partially via <a href="https://www.figma.com/community/file/907905462134453080">Figma</a> & TOP</p></div>
         </div>
-        <div class="header">Header</div>
+        <div class="header"><div class="top-header"><img src="./img/search.svg" id="search-icon" alt=""> <form action="#" method="get"><input type="search" name="find-records" placeholder="Quick Search" id="find-records"></form> <span></span> <img src="./img/bell-ring.svg" alt="" id="notification-icon"> 
+            <!-- <img src="./img/Guy 2.svg" alt="" id="pfp-icon">  -->
+             <button id="out">Sign Out</button>
+        
+            <h3 id="user-name">Daneil Richard</h3></div>
+        <div class="userwelcome"><div class="userpfp"><img src="./img/Guy 2.svg" id="pfp" alt=""></div> 
+        <div class="welcome-txt"> <h4>Hi there,</h4>
+        <h3>Daneil Richard (@Daneil Richy)</h3></div> 
+        <div class="ctabtn-group"><button>New</button><button>Upload Data</button><button>Give Permissions</button></div>   
+    </div>
+    </div>
         <div class="main-content">
-            <div class="heading">Heading</div>
+            <div class="heading"><h4>Your Metrics</h4> <h4>Announcements</h4></div>
             <div class="card-container">
-                <div class="card item1">Card1 <div class="card item4">Card4</div>
-                </div>
-                <div class="card item2">Card2 <div class="card item5">Card5</div></div>
-                <div class="card item3">Card3 <div class="card item6">Card 6</div></div></div>
-            <div class="side-content"> <div class="announcement">Announcements</div><div class="trending">Trending</div></div>
+                <div class="card item1"><div class="content-card"><div class="word-card"><h4>Fleet Metrics</h4> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eveniet assumenda minus, facere voluptates veniam maxime ipsam obcaecati aspernatur, rerum nobis, atque voluptate cumque ipsa ab exercitationem explicabo temporibus perferendis!</p></div><span id="card-icons1"> <img src="./img/heart.svg" alt=""> <img src="./img/folder.svg" alt=""> <img src="./img/export-variant.svg" alt=""></span></div></div>
+                <div class="card item2"><div class="content-card"><div class="word-card"><h4>Private Reservations</h4> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eveniet assumenda minus, facere voluptates veniam maxime ipsam obcaecati aspernatur, rerum nobis, atque voluptate cumque ipsa ab exercitationem explicabo temporibus perferendis!</p></div><span id="card-icons1"> <img src="./img/heart.svg" alt=""> <img src="./img/folder.svg" alt=""> <img src="./img/export-variant.svg" alt=""></span></div></div>
+                <div class="card item3"><div class="content-card"><div class="word-card"><h4>Revenue Analytics</h4> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eveniet assumenda minus, facere voluptates veniam maxime ipsam obcaecati aspernatur, rerum nobis, atque voluptate cumque ipsa ab exercitationem explicabo temporibus perferendis!</p></div><span id="card-icons1"> <img src="./img/heart.svg" alt=""> <img src="./img/folder.svg" alt=""> <img src="./img/export-variant.svg" alt=""></span></div></div>
+                <div class="card item4"><div class="content-card"><div class="word-card"><h4>Bouncie</h4> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eveniet assumenda minus, facere voluptates veniam maxime ipsam obcaecati aspernatur, rerum nobis, atque voluptate cumque ipsa ab exercitationem explicabo temporibus perferendis!</p></div><span id="card-icons1"> <img src="./img/heart.svg" alt=""> <img src="./img/folder.svg" alt=""> <img src="./img/export-variant.svg" alt=""></span></div></div>
+                <div class="card item5"><div class="content-card"><div class="word-card"><h4>Trip History</h4> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eveniet assumenda minus, facere voluptates veniam maxime ipsam obcaecati aspernatur, rerum nobis, atque voluptate cumque ipsa ab exercitationem explicabo temporibus perferendis!</p></div><span id="card-icons1"> <img src="./img/heart.svg" alt=""> <img src="./img/folder.svg" alt=""> <img src="./img/export-variant.svg" alt=""></span></div></div>
+
+                <div class="card item6"><div class="content-card"><div class="word-card"><h4>Maintenance Reports</h4> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eveniet assumenda minus, facere voluptates veniam maxime ipsam obcaecati aspernatur, rerum nobis, atque voluptate cumque ipsa ab exercitationem explicabo temporibus perferendis!</p></div><span id="card-icons1"> <img src="./img/heart.svg" alt=""> <img src="./img/folder.svg" alt=""> <img src="./img/export-variant.svg" alt=""></span></div></div>
+            </div>
+            <div class="side-content">
+                <div class="announcement">
+                    <div class="newsfeed">
+                        <div class="row">
+                            <h3>Bouncie Integration!</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolor cum nobis nesciunt ab libero delectus quo cumque illo a?</p>
+                        </div>
+                        <div class="row">
+                            <h3>New API</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolor cum nobis nesciunt ab libero delectus quo cumque illo a?</p>
+                        </div>
+                        <div class="row">
+                            <h3>Server Migration</h3>
+                            <p class="no-border">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolor cum nobis nesciunt ab libero delectus quo cumque illo a?</p>
+                        </div>
+                    </div></div><div class="trending">
+                        <div class="grid-items">
+                            <div class="flex item1">
+                                <div class="sub item"><img src="./img/dodge-charger-srt-hellcat.jpg" alt=""></div>
+                                <p class="sub-txt">2024 Dodge Charger <br> <B>Hellcat SRT</B></p>
+                            </div>
+                            <div class="flex item2">
+                                <div class="sub item">
+                                    <img src="./img/HD-wallpaper-lamborghini.jpg" alt="">
+                                </div>
+                                <p class="sub-txt">2021 Lamborghini <br><b>Hurrican</b></p>
+                            </div>
+                            <div class="flex item3">
+                                <div class="sub item">
+                                    <img src="./img/pexels-adaptphotos-11139552.jpg" alt="">
+                                </div>
+                                <p class="sub-txt">2022 Tesla <br> <b>Model 3 </b></p>
+                            </div>
+                            <div class="flex item4">
+                                <div class="sub item">
+                                    <img src="./img/photo-1553505192-acca7d4509be.jfif" alt="">
+                                </div>
+                                <p class="sub-txt">2020 BMW M4 <br> <b>M-Package</b></p>
+                            </div>
+                            
+                        </div></div>
+                            <h4 id="revenue-heading">Your Favorites</h4>
+                        </div>
             </div>
     </div>
 </body>
